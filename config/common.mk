@@ -36,6 +36,7 @@ PRODUCT_COPY_FILES += \
 # init file
 PRODUCT_COPY_FILES += \
     vendor/crystal/prebuilt/common/etc/init/init.crystal-system.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.crystal-system.rc \
+    vendor/crystal/prebuilt/common/etc/init/init.crystal-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.crystal-system_ext.rc \
     vendor/crystal/prebuilt/common/etc/init/init.crystal-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.crystal-updater.rc \
     vendor/crystal/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
 
