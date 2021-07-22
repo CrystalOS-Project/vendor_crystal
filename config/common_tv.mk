@@ -1,15 +1,15 @@
-# Inherit common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common.mk)
+# Inherit common Crystal stuff
+$(call inherit-product, vendor/crystal/config/common.mk)
 
-# Inherit Lineage atv device tree
-$(call inherit-product, device/lineage/atv/lineage_atv.mk)
+# Inherit Crystal atv device tree
+$(call inherit-product, device/crystal/atv/crystal_atv.mk)
 
 # AOSP packages
 PRODUCT_PACKAGES += \
     LeanbackIME
 
-# Lineage packages
+# Crystal packages
 PRODUCT_PACKAGES += \
-    LineageCustomizer
+    CrystalCustomizer
 
-DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/tv
+DEVICE_PACKAGE_OVERLAYS += vendor/crystal/overlay/tv

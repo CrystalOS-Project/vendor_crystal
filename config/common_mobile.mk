@@ -1,5 +1,5 @@
-# Inherit common mobile Lineage stuff
-$(call inherit-product, vendor/lineage/config/common.mk)
+# Inherit common mobile Crystal stuff
+$(call inherit-product, vendor/crystal/config/common.mk)
 
 # Default notification/alarm sounds
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -12,7 +12,7 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     Exchange2
 
-# Lineage packages
+# Crystal packages
 PRODUCT_PACKAGES += \
     Backgrounds \
     Eleven \
@@ -42,17 +42,17 @@ endif
 
 # Accents
 PRODUCT_PACKAGES += \
-    LineageBlackTheme \
-    LineageBlackAccent \
-    LineageBlueAccent \
-    LineageBrownAccent \
-    LineageCyanAccent \
-    LineageGreenAccent \
-    LineageOrangeAccent \
-    LineagePinkAccent \
-    LineagePurpleAccent \
-    LineageRedAccent \
-    LineageYellowAccent
+    CrystalBlackTheme \
+    CrystalBlackAccent \
+    CrystalBlueAccent \
+    CrystalBrownAccent \
+    CrystalCyanAccent \
+    CrystalGreenAccent \
+    CrystalOrangeAccent \
+    CrystalPinkAccent \
+    CrystalPurpleAccent \
+    CrystalRedAccent \
+    CrystalYellowAccent
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -61,7 +61,7 @@ PRODUCT_PACKAGES += \
 # Customizations
 PRODUCT_PACKAGES += \
     IconShapeSquareOverlay \
-    LineageNavigationBarNoHint \
+    CrystalNavigationBarNoHint \
     NavigationBarMode2ButtonOverlay
 
 # Media
