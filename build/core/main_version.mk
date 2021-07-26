@@ -1,4 +1,4 @@
-# CrystalOS System Version
+# CrystalOS System Version&Maintainer
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.crystal.version=$(CRYSTAL_VERSION) \
     ro.crystal.buildtype=$(CRYSTAL_BUILD_TYPE) \
