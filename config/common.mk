@@ -95,6 +95,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 endif
 
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/crystal/config/device_framework_matrix.xml
+
 ifeq ($(CRYSTAL_PURITY),GAPPS)
     $(call inherit-product, vendor/gapps/common/common-vendor.mk)
 endif
