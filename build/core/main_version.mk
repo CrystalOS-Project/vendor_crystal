@@ -5,4 +5,5 @@ ADDITIONAL_BUILD_PROPERTIES += \
     ro.crystal.maintainer=$(CRYSTAL_MAINTAINER) \
     ro.crystal.purity=$(CRYSTAL_PURITY) \
     ro.crystal.custom.type=$(CRYSTAL_CUSTOM_TYPE) \
-    ro.crystal.display.version=$(CRYSTAL_DISPLAY_VERSION)
+    ro.crystal.display.version=$(CRYSTAL_DISPLAY_VERSION) \
+    ro.crystal.build.date=$(CRYSTAL_BUILD_DATE)
