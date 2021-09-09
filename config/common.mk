@@ -193,8 +193,5 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.blurs_are_expensive=1 \
     ro.com.google.ime.kb_pad_port_b=1
 
-PRODUCT_PACKAGES += \
-    Mine
-
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/crystal/config/partner_gms.mk
