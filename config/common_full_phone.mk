@@ -9,3 +9,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/crystal/overlay/dictionaries
 
 $(call inherit-product, vendor/crystal/config/telephony.mk)
+
+$(call inherit-product-if-exists, system/core/libunwindstack/tests/files/IsOreBuild.mk)
