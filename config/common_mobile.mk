@@ -9,36 +9,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # AOSP packages
 PRODUCT_PACKAGES += \
     Email \
-    ExactCalculator \
     Exchange2
-
-# Crystal packages
-PRODUCT_PACKAGES += \
-    Backgrounds \
-    Eleven \
-    Etar \
-    Jelly \
-    Profiles \
-    Seedvault
-
-ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
-PRODUCT_PACKAGES += \
-    AudioFX
-endif
-
-ifeq ($(PRODUCT_TYPE), go)
-PRODUCT_PACKAGES += \
-    TrebuchetQuickStepGo
-
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    TrebuchetQuickStepGo
-else
-PRODUCT_PACKAGES += \
-    TrebuchetQuickStep
-
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    TrebuchetQuickStep
-endif
 
 # Accents
 PRODUCT_PACKAGES += \
