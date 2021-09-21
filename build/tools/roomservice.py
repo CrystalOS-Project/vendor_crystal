@@ -52,7 +52,7 @@ except:
     device = product
 
 if not depsonly:
-    print("Device %s not found. Attempting to retrieve device repository from CrystalOS Github (http://github.com/CrystalOS)." % device)
+    print("Device %s not found. Attempting to retrieve device repository from CrystalOS Github (http://github.com/CrystalOS-Devices)." % device)
 
 repositories = []
 
@@ -137,7 +137,7 @@ def get_from_manifest(devicename):
         lm = ElementTree.Element("manifest")
 
     for localpath in lm.findall("project"):
-        if re.search("android_device_.*_%s$" % device, localpath.get("name")):
+        if re.search("device_.*_%s$" % device, localpath.get("name")):
             return localpath.get("path")
 
     return None
@@ -189,12 +189,12 @@ def add_to_manifest(repositories, fallback_branch = None):
         repo_target = repository['target_path']
         print('Checking if %s is fetched from %s' % (repo_target, repo_name))
         if is_in_manifest(repo_target):
-            print('CrystalOS/%s already fetched to %s' % (repo_name, repo_target))
+            print('CrystalOS-Project/%s already fetched to %s' % (repo_name, repo_target))
             continue
 
-        print('Adding dependency: CrystalOS/%s -> %s' % (repo_name, repo_target))
+        print('Adding dependency: CrystalOS-Project/%s -> %s' % (repo_name, repo_target))
         project = ElementTree.Element("project", attrib = { "path": repo_target,
-            "remote": "github", "name": "CrystalOS/%s" % repo_name })
+            "remote": "github", "name": "CrystalOS-Project/%s" % repo_name })
 
         if 'branch' in repository:
             project.set('revision',repository['branch'])
@@ -263,10 +263,10 @@ if depsonly:
 else:
     for repository in repositories:
         repo_name = repository['name']
-        if re.match(r"^android_device_[^_]*_" + device + "$", repo_name):
+        if re.match(r"^device_[^_]*_" + device + "$", repo_name):
             print("Found repository: %s" % repository['name'])
             
-            manufacturer = repo_name.replace("android_device_", "").replace("_" + device, "")
+            manufacturer = repo_name.replace("device_", "").replace("_" + device, "")
             
             default_revision = get_default_revision()
             print("Default revision: %s" % default_revision)
