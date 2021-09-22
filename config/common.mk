@@ -195,4 +195,3 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/crystal/config/partner_gms.mk
-include packages/apps/Lawnchair/lawnchair.mk
