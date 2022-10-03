@@ -163,4 +163,7 @@
     <string name="config_systemUiIntelligence">com.google.android.as</string>
     <string name="config_systemVisualIntelligence">com.google.android.as</string>
 
+    <!-- Default component for QR code scanner -->
+    <string name="config_defaultQrCodeComponent">org.derpfest.flash/.QrScannerActivity</string>
+
 </resources>
