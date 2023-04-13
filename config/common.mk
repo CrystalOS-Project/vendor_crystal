@@ -43,11 +43,7 @@ PRODUCT_COPY_FILES += \
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/crystal/build/tools/backuptool.sh:install/bin/backuptool.sh \
-    vendor/crystal/build/tools/backuptool.functions:install/bin/backuptool.functions \
-    vendor/crystal/build/tools/50-crystal.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-crystal.sh
-
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/addon.d/50-crystal.sh
+    vendor/crystal/build/tools/backuptool.functions:install/bin/backuptool.functions
 
 ifneq ($(strip $(AB_OTA_PARTITIONS) $(AB_OTA_POSTINSTALL_CONFIG)),)
 PRODUCT_COPY_FILES += \
