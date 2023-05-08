@@ -59,6 +59,7 @@ SOONG_CONFIG_crystalGlobalVars += \
     uses_camera_parameter_lib \
     uses_egl_display_array \
     uses_oplus_camera \
+    uses_oppo_camera \
     uses_nothing_camera
 
 SOONG_CONFIG_NAMESPACES += crystalNvidiaVars
@@ -98,6 +99,7 @@ SOONG_CONFIG_crystalGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPL
 SOONG_CONFIG_crystalGlobalVars_sdmcore_has_is_display_hw_available_func := $(TARGET_SDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC)
 SOONG_CONFIG_crystalGlobalVars_target_alternative_futex_waiters := $(TARGET_ALTERNATIVE_FUTEX_WAITERS)
 SOONG_CONFIG_crystalGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
+SOONG_CONFIG_crystalGlobalVars_uses_oppo_camera := $(TARGET_USES_OPPO_CAMERA)
 SOONG_CONFIG_crystalGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
 SOONG_CONFIG_crystalNvidiaVars_uses_nv_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_crystalQcomVars_qti_vibrator_use_effect_stream := $(TARGET_QTI_VIBRATOR_USE_EFFECT_STREAM)
