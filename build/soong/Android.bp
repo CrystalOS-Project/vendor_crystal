@@ -59,6 +59,26 @@ disable_postrender_cleanup {
     soong_config_variables: {
         disable_postrender_cleanup: {
             cppflags: ["-DDISABLE_POSTRENDER_CLEANUP"],
+		},
+	},
+}
+
+soong_config_module_type {
+    name: "aapt_version_code",
+    module_type: "java_defaults",
+    config_namespace: "crystalGlobalVars",
+    value_variables: ["aapt_version_code"],
+    properties: ["aaptflags"],
+}
+
+aapt_version_code {
+    name: "aapt_version_code_defaults",
+    soong_config_variables: {
+        aapt_version_code: {
+            aaptflags: [
+                "--version-code",
+                "%s",
+            ],
         },
     },
 }
