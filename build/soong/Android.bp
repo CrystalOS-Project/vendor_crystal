@@ -889,6 +889,23 @@ uses_oppo_camera {
     soong_config_variables: {
         uses_oppo_camera: {
             cppflags: ["-DUSES_OPPO_CAMERA"],
+		},
+	},
+}
+
+soong_config_module_type {
+    name: "surfaceflinger_mtk_extensions",
+    module_type: "cc_defaults",
+    config_namespace: "crystalMtkVars",
+    bool_variables: ["has_mtk_surfaceflinger"],
+    properties: [ "cflags" ],
+}
+
+surfaceflinger_mtk_extensions {
+    name: "surfaceflinger_mtk_ext_defaults",
+    soong_config_variables: {
+        has_mtk_surfaceflinger: {
+            cflags: ["-DMTK_SKIP_SKIA_EXTERNAL_TEXTURE_CACHE"],
         },
     },
 }

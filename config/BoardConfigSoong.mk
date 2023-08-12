@@ -85,6 +85,10 @@ SOONG_CONFIG_crystalQcomVars += \
     uses_qti_camera_device \
     needs_camera_boottime_timestamp
 
+SOONG_CONFIG_NAMESPACES += crystalMtkVars
+SOONG_CONFIG_crystalMtkVars += \
+    has_mtk_surfaceflinger
+
 # Only create display_headers_namespace var if dealing with UM platforms to avoid breaking build for all other platforms
 ifneq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_crystalQcomVars += \
@@ -124,6 +128,7 @@ SOONG_CONFIG_crystalQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_P
 SOONG_CONFIG_crystalQcomVars_uses_qcom_bsp_legacy := $(TARGET_USES_QCOM_BSP_LEGACY)
 SOONG_CONFIG_crystalQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
 SOONG_CONFIG_crystalQcomVars_needs_camera_boottime_timestamp := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
+SOONG_CONFIG_crystalMtkVars_has_mtk_surfaceflinger := $(TARGET_HAS_MTK_SURFACEFLINGER)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
