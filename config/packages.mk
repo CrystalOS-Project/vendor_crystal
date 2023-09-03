@@ -47,6 +47,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NavigationBarNoHintOverlay
 
+# Neofetch
+PRODUCT_COPY_FILES += \
+    vendor/crystal/tools/neofetch:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/neofetch
+
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
