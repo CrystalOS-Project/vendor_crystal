@@ -62,9 +62,10 @@ SOONG_CONFIG_crystalGlobalVars += \
     target_trust_usb_control_disable \
     uses_camera_parameter_lib \
     uses_egl_display_array \
+    uses_miui_camera \
+    uses_nothing_camera \
     uses_oplus_camera \
-    uses_oppo_camera \
-    uses_nothing_camera
+    uses_oppo_camera
 
 SOONG_CONFIG_NAMESPACES += crystalNvidiaVars
 SOONG_CONFIG_crystalNvidiaVars += \
@@ -107,9 +108,10 @@ SOONG_CONFIG_crystalGlobalVars_needs_netd_direct_connect_rule := $(TARGET_NEEDS_
 SOONG_CONFIG_crystalGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_crystalGlobalVars_sdmcore_has_is_display_hw_available_func := $(TARGET_SDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC)
 SOONG_CONFIG_crystalGlobalVars_target_alternative_futex_waiters := $(TARGET_ALTERNATIVE_FUTEX_WAITERS)
+SOONG_CONFIG_crystalGlobalVars_uses_miui_camera := $(TARGET_USES_MIUI_CAMERA)
+SOONG_CONFIG_crystalGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
 SOONG_CONFIG_crystalGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
 SOONG_CONFIG_crystalGlobalVars_uses_oppo_camera := $(TARGET_USES_OPPO_CAMERA)
-SOONG_CONFIG_crystalGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
 SOONG_CONFIG_crystalNvidiaVars_uses_nv_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_crystalQcomVars_qti_vibrator_use_effect_stream := $(TARGET_QTI_VIBRATOR_USE_EFFECT_STREAM)
 SOONG_CONFIG_crystalQcomVars_should_wait_for_qsee := $(TARGET_KEYMASTER_WAIT_FOR_QSEE)
