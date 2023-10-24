@@ -7,6 +7,3 @@ endef
 
 # Include board/platform macros
 include vendor/crystal/build/core/utils.mk
-
-# Include vendor platform definitions
-include vendor/crystal/build/core/vendor/*.mk

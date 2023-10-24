@@ -16,7 +16,7 @@
 include vendor/crystal/config/BoardConfigKernel.mk
 
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
-include vendor/crystal/config/BoardConfigQcom.mk
+include hardware/qcom-caf/common/BoardConfigQcom.mk
 endif
 
 include vendor/crystal/config/BoardConfigSoong.mk
