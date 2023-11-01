@@ -16,8 +16,11 @@
 
 # -----------------------------------------------------------------
 # Crystal OTA update package
-
+ifeq ($(TARGET_BUILD_VARIANT),eng)
+CRYSTAL_TARGET_PACKAGE := $(PRODUCT_OUT)/ENG-CrystalOS-$(CRYSTAL_VERSION)-$(CRYSTAL_VERSION_NAME)-$(CRYSTAL_BUILD_TYPE)-$(CRYSTAL_DEVICE)-$(CRYSTAL_BUILD_DATE).zip
+else
 CRYSTAL_TARGET_PACKAGE := $(PRODUCT_OUT)/CrystalOS-$(CRYSTAL_VERSION)-$(CRYSTAL_VERSION_NAME)-$(CRYSTAL_BUILD_TYPE)-$(CRYSTAL_DEVICE)-$(CRYSTAL_BUILD_DATE).zip
+endif
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
