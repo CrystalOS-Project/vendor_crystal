@@ -17,9 +17,6 @@ include vendor/crystal/config/version.mk
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/crystal/overlay/common
 
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/crystal/overlay/themes/CrystalIcons
-
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     vendor/crystal/overlay/common
 
