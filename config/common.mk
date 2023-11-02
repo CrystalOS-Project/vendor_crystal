@@ -100,7 +100,7 @@ ifeq ($(CRYSTAL_PURITY),GAPPS)
 endif
 
 # Bootanimation
-#include vendor/crystal/config/bootanimation.mk
+include vendor/crystal/config/bootanimation.mk
 
 # Fonts
 include vendor/crystal/config/fonts.mk
