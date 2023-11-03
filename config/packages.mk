@@ -109,3 +109,11 @@ PRODUCT_PACKAGES += \
 # World APN list
 PRODUCT_PACKAGES += \
     apns-conf.xml
+
+ifeq ($(TARGET_USES_APERTURE),true)
+    PRODUCT_PACKAGES += \
+    Aperture
+else
+    PRODUCT_PACKAGES += \
+    Camera2
+endif
