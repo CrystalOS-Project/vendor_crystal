@@ -117,3 +117,8 @@ else
     PRODUCT_PACKAGES += \
     Camera2
 endif
+
+ifeq ($(TARGET_USES_AUDIOFX),true)
+	PRODUCT_PACKAGES += \
+	AudioFX
+endif
