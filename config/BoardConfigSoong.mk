@@ -65,6 +65,8 @@ SOONG_CONFIG_crystalNvidiaVars += \
 SOONG_CONFIG_NAMESPACES += crystalQcomVars
 SOONG_CONFIG_crystalQcomVars += \
     should_wait_for_qsee \
+    qti_vibrator_effect_lib \
+    qti_vibrator_use_effect_stream \
     supports_extended_compress_format \
     supports_hw_fde \
     supports_hw_fde_perf \
@@ -92,6 +94,7 @@ SOONG_CONFIG_crystalGlobalVars_needs_netd_direct_connect_rule := $(TARGET_NEEDS_
 SOONG_CONFIG_crystalGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_crystalGlobalVars_target_alternative_futex_waiters := $(TARGET_ALTERNATIVE_FUTEX_WAITERS)
 SOONG_CONFIG_crystalNvidiaVars_uses_nv_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
+SOONG_CONFIG_crystalQcomVars_qti_vibrator_use_effect_stream := $(TARGET_QTI_VIBRATOR_USE_EFFECT_STREAM)
 SOONG_CONFIG_crystalQcomVars_should_wait_for_qsee := $(TARGET_KEYMASTER_WAIT_FOR_QSEE)
 SOONG_CONFIG_crystalQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_crystalQcomVars_supports_hw_fde := $(TARGET_HW_DISK_ENCRYPTION)
@@ -116,6 +119,7 @@ TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE ?= true
 TARGET_INIT_VENDOR_LIB ?= vendor_init
 TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY ?= 0
 TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY ?= libcamera_parameters
+TARGET_QTI_VIBRATOR_EFFECT_LIB ?= libqtivibratoreffect
 TARGET_SURFACEFLINGER_UDFPS_LIB ?= surfaceflinger_udfps_lib
 TARGET_TRUST_USB_CONTROL_PATH ?= /proc/sys/kernel/deny_new_usb
 TARGET_TRUST_USB_CONTROL_ENABLE ?= 1
@@ -147,6 +151,7 @@ SOONG_CONFIG_crystalQcomVars_qcom_display_headers_namespace := vendor/qcom/opens
 else
 SOONG_CONFIG_crystalQcomVars_qcom_display_headers_namespace := $(QCOM_SOONG_NAMESPACE)/display
 endif
+SOONG_CONFIG_crystalQcomVars_qti_vibrator_effect_lib := $(TARGET_QTI_VIBRATOR_EFFECT_LIB)
 
 ifneq ($(TARGET_USE_QTI_BT_STACK),true)
 PRODUCT_SOONG_NAMESPACES += packages/apps/Bluetooth
