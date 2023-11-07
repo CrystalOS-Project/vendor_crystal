@@ -25,7 +25,8 @@ PRODUCT_PACKAGES += \
     SimpleGallery \
     Stk \
     stats \
-    ThemePicker
+    ThemePicker \
+    adb_root
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
