@@ -119,6 +119,14 @@ else
     Camera2
 endif
 
+ifeq ($(TARGET_USES_FLASH),true)
+    PRODUCT_PACKAGES += \
+    Flash
+else
+    PRODUCT_PACKAGES += \
+    Camera2
+endif
+
 ifeq ($(TARGET_USES_AUDIOFX),true)
 	PRODUCT_PACKAGES += \
 	AudioFX
