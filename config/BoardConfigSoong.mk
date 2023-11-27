@@ -39,6 +39,7 @@ SOONG_CONFIG_crystalGlobalVars += \
     has_memfd_backport \
     ignores_ftp_pptp_conntrack_failure \
     needs_netd_direct_connect_rule \
+    sdmcore_has_is_display_hw_available_func \
     target_alternative_futex_waiters \
     target_health_charging_control_charging_path \
     target_health_charging_control_charging_enabled \
@@ -92,6 +93,7 @@ SOONG_CONFIG_crystalGlobalVars_has_memfd_backport := $(TARGET_HAS_MEMFD_BACKPORT
 SOONG_CONFIG_crystalGlobalVars_ignores_ftp_pptp_conntrack_failure := $(TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE)
 SOONG_CONFIG_crystalGlobalVars_needs_netd_direct_connect_rule := $(TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE)
 SOONG_CONFIG_crystalGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
+SOONG_CONFIG_crystalGlobalVars_sdmcore_has_is_display_hw_available_func := $(TARGET_SDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC)
 SOONG_CONFIG_crystalGlobalVars_target_alternative_futex_waiters := $(TARGET_ALTERNATIVE_FUTEX_WAITERS)
 SOONG_CONFIG_crystalNvidiaVars_uses_nv_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_crystalQcomVars_qti_vibrator_use_effect_stream := $(TARGET_QTI_VIBRATOR_USE_EFFECT_STREAM)
@@ -120,6 +122,7 @@ TARGET_INIT_VENDOR_LIB ?= vendor_init
 TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY ?= 0
 TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY ?= libcamera_parameters
 TARGET_QTI_VIBRATOR_EFFECT_LIB ?= libqtivibratoreffect
+TARGET_SDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC ?= true
 TARGET_SURFACEFLINGER_UDFPS_LIB ?= surfaceflinger_udfps_lib
 TARGET_TRUST_USB_CONTROL_PATH ?= /proc/sys/kernel/deny_new_usb
 TARGET_TRUST_USB_CONTROL_ENABLE ?= 1
