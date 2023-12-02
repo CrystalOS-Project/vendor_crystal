@@ -116,3 +116,6 @@ include vendor/crystal/config/props.mk
 
 # Sounds
 include vendor/crystal/config/sounds.mk
+
+PRODUCT_COPY_FILES += \
+    vendor/crystal/overlay/rro_packages/partition_order.xml:$(TARGET_COPY_OUT_PRODUCT)/overlay/partition_order.xml
