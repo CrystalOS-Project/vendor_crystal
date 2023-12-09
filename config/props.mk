@@ -71,3 +71,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Enable support of one-handed mode
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_one_handed_mode=true
+
+# Display
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    debug.sf.frame_rate_multiple_threshold=60 \
+    ro.surface_flinger.enable_frame_rate_override=false
