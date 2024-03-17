@@ -68,7 +68,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensitive Phone Numbers list
 PRODUCT_COPY_FILES += \
-    vendor/crystal/prebuilt/common/etc/sensitive_pn.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sensitive_pn.xml
+    vendor/crystal/prebuilt/common/etc/sensitive_pn.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sensitive_pn.xml
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
