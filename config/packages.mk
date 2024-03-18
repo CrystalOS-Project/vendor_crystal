@@ -115,14 +115,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     apns-conf.xml
 
-ifeq ($(TARGET_USES_APERTURE),true)
-    PRODUCT_PACKAGES += \
-    Aperture
-else
-    PRODUCT_PACKAGES += \
-    Camera2
-endif
-
 ifeq ($(TARGET_USES_FLASH),true)
     PRODUCT_PACKAGES += \
     Flash
