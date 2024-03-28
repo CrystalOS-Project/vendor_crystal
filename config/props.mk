@@ -76,3 +76,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     debug.sf.frame_rate_multiple_threshold=60 \
     ro.surface_flinger.enable_frame_rate_override=false
+
+# Display Type
+TARGET_DEVICE_DISPLAY_PANEL ?= LCD
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.display.panel.type=$(TARGET_DEVICE_DISPLAY_PANEL)
