@@ -58,7 +58,7 @@ function Crystalize()
 {
     breakfast $*
     if [ $? -eq 0 ]; then
-        m crystal
+        m crystal -j$(nproc --all)
     else
         echo "No such item in brunch menu. Try 'breakfast'"
         return 1
